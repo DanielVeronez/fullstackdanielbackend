@@ -33,5 +33,5 @@ app.use((req, res, next) => {
 app.use('/api', require('./src/routes'));
 
 //servidor
-server.listen(3002);
+server.listen(process.env.PORT || 3002);
 console.log('Servidor ligado na porta 3002');
